@@ -1,0 +1,141 @@
+#include <stdlib.h>
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+#include "funcionestrig.h"
+#include "matriz3.h"
+#include "figuras.h"
+
+void menuprincipal();
+void funcionestrig();
+void matriz();
+void figuras();
+void exit();
+main()
+{
+      menuprincipal();
+      
+      }
+      
+void menuprincipal()
+{
+     
+     cout<<"Funciones trigonométricas \n;
+     cout<<2Volumenes de Figuras Geometricas \n;
+     cout<<"Operaciones con matrices \n;
+   
+    
+     
+     switch(op)
+     {        case ?:
+              funcionestrig();
+             
+              
+              break;
+              
+              case ?:
+              figuras();
+	      
+              break;
+              
+              case ?:
+              matriz();
+              
+              
+              break;
+              
+            
+  ********************SubMenus*****************
+     
+ void funcionestrig()
+{
+       int opcion;
+            cout<<" Escoga la opcion del Submenu 1: \n";
+     cout<<"1.Seno \n";
+     cout<<"2.Coseno \n";
+     cout<<"3.Tangente \n";
+     cout<<"4.Secante \n";
+     cout<<"5.Cosecante \n";
+     cout<<"6.Cotangente \n";
+     cout<<"7.Salir \n";
+     cout<<"Opcion: ";
+     cin>>opcion;
+     switch(opcion)
+     {
+     case 1:
+           sen();
+           break;
+     case 2:
+          cos();
+          break;
+     case 3:
+          tan();
+          break;
+     case 4:
+          sec();
+          break;
+     case 5:
+          cose();
+          break;
+     case 6:
+          cota();
+          break;
+   
+          }    
+void figuras()
+{
+    int opcion;
+   cout<<"Escoga una opcion del submenu 2\";
+   cout<<"Cuadrado";
+   cout<<"Rectangulo";
+   cout<<"Triangulo";
+   cout<<"Circulo"; 
+   cout<<"Cilindro\n";
+   cout<<"Cono\n";
+   cout<<"Esfera\n";
+   cout<<"0. Salir\n\n";
+   cout"Opcion: ";
+   cin>>opcion;
+    switch(opcion){
+case 1:
+cilindro();
+break;
+case 2:
+cono();
+break;
+case 3:
+esfera();
+break;
+
+}
+  
+}
+
+void matriz()
+{
+    
+int fila,columna,A[2][2],B[2][2],opcion;
+    cout<<"\tEscoga la opcion submenu \n";
+cout<<"1-Suma\n";
+cout<<"2-Resta\n";
+cout<<"3-Multiplicacion\n";
+cout<<"4-Division\n\n";
+cout<<"5-Salir\n\n";
+cout"Opcion: ";
+cin>>opcion;
+
+switch(opcion){
+case 1:
+sumamatrices();
+break;
+case 2:
+restamatrices();
+break;
+case 3:
+multiplicacionmatrices();
+break;
+case 4:
+divisionmatrices();
+break;
+
+     

@@ -1,0 +1,186 @@
+#include <stdlib.h>
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+#include "funcionestrig.h"
+#include "matriz3.h"
+
+void menuprincipal();
+void funcionestrig();
+void matriz();
+void exit();
+main()
+{
+      menuprincipal();
+      
+      }
+      
+void menuprincipal()
+{
+     int x;
+      lel:
+     printf("Elige la opción que quieras: \n\n\n");
+     printf("1)Funciones trigonométricas \n\n");
+     printf("2)Volumenes de Figuras Geometricas \n\n");
+     printf("3)Operaciones con matrices \n\n");
+     printf("4)Salir \n\n");
+     scanf("%i",&x);
+     system("cls");
+    
+     if(x<=4 && x>=1)
+     {
+     switch(x)
+     {        case 1:
+              funcionestrig();
+              system("cls");
+              goto lel;
+              break;
+              
+              case 2:
+              
+              break;
+              
+              case 3:
+              matriz();
+              system("cls");
+              goto lel;
+              break;
+              
+              case 4:
+                   system("cls");
+                   exit();
+                   
+                   break;
+              }
+              }//fin de if
+     else
+     printf("Introduce un valor entre 4 y 1 \n");
+      
+      }//fin del main 
+     
+ void funcionestrig()
+{
+       int opcion;
+            printf(" Escoga la opcion del submenu 1: \n\n");
+     printf("1.Seno \n");
+     printf("2.Coseno \n");
+     printf("3.Tangente \n");
+     printf("4.Secante \n");
+     printf("5.Cosecante \n");
+     printf("6.Cotangente \n");
+     printf("7.Salir \n");
+     scanf("%i",&opcion);
+     switch(opcion)
+     {
+     case 1:
+           sen();
+           break;
+     case 2:
+          cos();
+          break;
+     case 3:
+          tan();
+          break;
+     case 4:
+          sec();
+          break;
+     case 5:
+          cose();
+          break;
+     case 6:
+          cota();
+          break;
+          }
+          }    
+
+void matriz()
+{int fila,columna,A[2][2],B[2][2],opcion;
+    printf("\tOPERACION\n\n");
+printf("1-Suma\n");
+printf("2-Resta\n");
+printf("3-Multiplicacion\n");
+printf("4-Division\n\n");
+printf("opcion: ");
+scanf("%d", &opcion);
+switch(opcion){
+case 1:
+sumamatrices();
+break;
+case 2:
+restamatrices();
+break;
+case 3:
+multiplicacionmatrices();
+break;
+case 4:
+divisionmatrices();
+break;
+}
+     
+     }
+void exit()
+{
+     printf("Bye\n\n");
+    getch();
+     
+     }
+
+float  p,resul;
+
+    
+//Seno
+
+      void sen()
+           {
+          printf("introduce el valor al que deseas sacarle seno:\n");
+           scanf("%f",&p);
+           resul= sin(p);
+           printf("El seno de %f es: %.5f\n",p,resul);
+           getch();
+           }
+           
+     //Coseno
+     void cos()
+     {
+           printf("Introduce el valor al que deseas sacarle coseno: \n");
+           scanf("%f",&p);
+           resul=cos(p);
+           printf("El seno de %f es: %.5f\n",p,resul);
+           getch();
+           }           
+     //Tangente
+     void tan()
+     {
+           printf("Introduce el valor al que deseas sacarle Tangente: \n");
+           scanf("%f",&p);
+           resul=tan(p);
+           printf("La tangente e %f es: %.5f\n",p,resul);
+           getch();
+           }           
+     //Secante
+     void sec()
+     {
+           printf("Introduce el valor al que deseas sacarle coseno: \n");
+           scanf("%f",&p);
+           resul=1/cos(p);
+           printf("El seno de %f es: %.5f\n",p,resul);
+           getch();           
+           }     
+     //Cosecante
+     void cose ()
+     {
+           printf("Introduce el valor al que deseas sacarle cosecante: \n");
+           scanf("%f",&p);
+           resul=1/sin(p);
+           printf("Cosecante de %f es: %.5f\n",p,resul);
+           getch();
+           }
+     //Cotangete
+     void cota()
+     {
+           printf("Introduce el valor al que deseas sacarle cotangente: \n");
+           scanf("%f",&p);
+           resul=1/tan(p);
+           printf("Cotangente de %f es: %.5f\n",p,resul);
+           getch();  
+           }

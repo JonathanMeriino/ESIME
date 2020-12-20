@@ -1,0 +1,42 @@
+float pi = 3.1416;
+//Cilindro         
+void cilindro()
+{
+float RADIO, ALTURA, AREA, VOLUMEN;
+
+cout"Dame el radio del cilindro: \n");
+cin>>RADIO;
+cout<<"Dame la altura del cilindro: \n";
+cin>>ALTURA;
+AREA = 2*pi*RADIO*ALTURA;
+VOLUMEN=pi*RADIO*RADIO*ALTURA;
+cout<<"\n El volumen del cilindro es:"<<VOLUMEN<<endl;
+cout<<"\n\t El area del cilindro es:"<<AREA<<endl;
+getch();
+}
+//Cono
+void cono()
+{
+
+    float r, h;
+    cout<<"r = ";
+    cin>>r;
+    cout<<"\nh = ";
+    cin>>h;
+    cout<<"\n\nVolumen = <<pi * r * r * h * 1/3<<endl;
+    getch();
+}
+//Esfera
+void esfera()
+{
+
+ 
+	float radio;
+	cout<<"Introduce el radio de la esfera\n";
+	cout<<radio;
+	
+	cout<<"\n\nEl volumen de la esfera de radio:<<radio<<" es: "<<4/3*pi*radio*radio*radio<<endl;;
+	cout<<"\n\nEl area de la esfera de radio:<<radio<<" es:"<<4*pi*radio*radio<<endl;
+    getch();
+
+}

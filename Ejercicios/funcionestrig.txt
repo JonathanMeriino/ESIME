@@ -1,0 +1,60 @@
+float  p,resul;
+
+    
+//Seno
+
+      void sen()
+           {
+          cout<<"Introduce el valor al que deseas sacarle seno:\n";
+           cin<<p;
+           resul= sin(p);
+           printf("El seno de "<<p<<"es: "<<resul<<endl; 
+           getch();
+           }
+           
+     //Coseno
+     void cos()
+     {
+           cout<<"Introduce el valor al que deseas sacarle coseno: \n";
+           cin>>p;
+           resul=cos(p);
+           cout<<"El coseno de" <<p<<" es: "<<resul<<endl;
+           getch();
+           }           
+     
+	//Tangente
+     void tan()
+     {
+           cout<<"Introduce el valor al que deseas sacarle Tangente: \n";
+           cin>>p;
+           resul=tan(p);
+           cout<<"La tangente de" <<p<<" es: "<<resul<<endl;
+           getch();
+           }           
+     //Secante
+     void sec()
+     {
+           cout<<"Introduce el valor al que deseas sacarle coseno: \n";
+           cin>>p;
+           resul=1/cos(p);
+           cout<<"La secante de "<<p<<" es: "<<resul<<endl;;
+           getch();           
+           }     
+     //Cosecante
+     void cose ()
+     {
+           cout<<"Introduce el valor al que deseas sacarle cosecante: \n";
+           cin>>p;
+           resul=1/sin(p);
+           cout<<"El cosecante de" <<p<<" es: "<<resul<<endl;
+           getch();
+           }
+     //Cotangete
+     void cota()
+     {
+           cout>>"Introduce el valor al que deseas sacarle cotangente: \n";
+           cin>>p;
+           resul=1/tan(p);
+           cout<<"La cotangente de" <<p<<" es: "<<resul<<endl;
+           getch();  
+           }                    
